@@ -1,0 +1,50 @@
+{
+  "name": "ahk-v1-icon",
+  "displayName": "ahk-icon",
+  "description": "just set ahk icon",
+  "publisher": "",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "license": "MIT",
+  "homepage": "https://github.com/CoffeeChaton/vscode-ahk-icon/blob/main/README.md",
+  "bugs": {
+    "url": "https://github.com/CoffeeChaton/vscode-ahk-icon/issues"
+  },
+  "repository": "https://github.com/CoffeeChaton/vscode-ahk-icon",
+  "main": "./dist/extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "ahk",
+        "aliases": [
+          "AutoHotkey",
+          "autohotkey",
+          "ahk"
+        ],
+        "extensions": [
+          ".ahk"
+        ],
+        "icon": {
+          "dark": "icon_ahk_v1.png",
+          "light": "icon_ahk_v1.png"
+        }
+      }
+    ]
+  },
+  "icon": "icon_ahk_v1.png",
+  "scripts": {
+    "vscode:prepublish": "",
+    "packageCore": "pnpm vsce package --no-dependencies --baseImagesUrl https://github.com/CoffeeChaton/vscode-ahk-icon/main/"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^2.27.0",
+    "@types/vscode": "^1.60.0",
+    "@types/node": "18.x"
+  }
+}
