@@ -28,9 +28,7 @@
     },
     "description": "just set ahk icon",
     "devDependencies": {
-        "@vscode/vsce": "^2.27.0",
-        "@types/vscode": "^1.60.0",
-        "@types/node": "18.x"
+        "@vscode/vsce": "^3.3.1"
     },
     "displayName": "ahk-icon",
     "engines": {
@@ -47,5 +45,10 @@
         "vscode:prepublish": "",
         "packageCore": "pnpm vsce package --no-dependencies --baseImagesUrl https://raw.githubusercontent.com/CoffeeChaton/vscode-ahk-icon/main/"
     },
-    "version": "1.0.0"
+    "version": "1.0.1",
+    "pnpm": {
+        "onlyBuiltDependencies": [
+            "@vscode/vsce-sign"
+        ]
+    }
 }
